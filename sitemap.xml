@@ -75,4 +75,14 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://instalacionelectrica.mx/blog/motor-se-sobrecalienta-armonicos.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://instalacionelectrica.mx/blog/factor-de-potencia-recibo-cfe.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
