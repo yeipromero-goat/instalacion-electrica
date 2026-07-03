@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog de Ingeniería Eléctrica Industrial | In-G9 Soluciones de Energía</title>
-<meta name="description" content="Optimización eléctrica, mantenimiento predictivo, medición de calidad de energía y energías alternativas para fábricas e industria. Contenido técnico de In-G9.">
-<link rel="canonical" href="https://instalacionelectrica.mx/blog/">
+<title>Por Qué un Motor se Sobrecalienta sin Sobrecarga | In-G9</title>
+<meta name="description" content="Por qué un motor puede sobrecalentarse con la misma carga de siempre, y cómo los armónicos explican lo que un amperímetro normal no detecta.">
+<link rel="canonical" href="https://instalacionelectrica.mx/blog/motor-se-sobrecalienta-armonicos.html">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog de Ingeniería Eléctrica Industrial | In-G9">
-<meta property="og:description" content="Optimización eléctrica, mantenimiento predictivo y medición de calidad de energía para fábricas e industria.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Por Qué un Motor se Sobrecalienta sin Estar Sobrecargado">
+<meta property="og:description" content="Cómo los armónicos explican el calentamiento de un motor que un amperímetro normal no alcanza a detectar.">
 <meta property="og:locale" content="es_MX">
-<meta property="og:url" content="https://instalacionelectrica.mx/blog/">
+<meta property="og:url" content="https://instalacionelectrica.mx/blog/motor-se-sobrecalienta-armonicos.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +20,20 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Blog de Ingeniería Eléctrica Industrial In-G9",
-  "description": "Artículos sobre optimización eléctrica, mantenimiento predictivo, medición de calidad de energía y energías alternativas para fábricas e industria.",
-  "url": "https://instalacionelectrica.mx/blog/",
+  "@type": "BlogPosting",
+  "headline": "Por qué un motor se sobrecalienta sin estar sobrecargado (armónicos explicados)",
+  "description": "Por qué un motor puede sobrecalentarse con la misma carga de siempre, y cómo los armónicos explican lo que un amperímetro normal no detecta.",
+  "author": {
+    "@type": "Organization",
+    "name": "In-G9 Soluciones de Energía"
+  },
   "publisher": {
     "@type": "ProfessionalService",
     "name": "In-G9 Soluciones de Energía",
     "url": "https://instalacionelectrica.mx/"
   },
+  "mainEntityOfPage": "https://instalacionelectrica.mx/blog/motor-se-sobrecalienta-armonicos.html",
+  "url": "https://instalacionelectrica.mx/blog/motor-se-sobrecalienta-armonicos.html",
   "inLanguage": "es-MX"
 }
 </script>
@@ -39,7 +44,8 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://instalacionelectrica.mx/"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://instalacionelectrica.mx/blog/"}
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://instalacionelectrica.mx/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Por qué un motor se sobrecalienta sin estar sobrecargado (armónicos explicados)", "item": "https://instalacionelectrica.mx/blog/motor-se-sobrecalienta-armonicos.html"}
   ]
 }
 </script>
@@ -270,40 +276,26 @@
   .breadcrumb{ padding:20px 0 0; font-family:var(--mono); font-size:0.76rem; color:var(--graphite); }
   .breadcrumb a{ color:var(--graphite); } .breadcrumb a:hover{ color:var(--yellow); }
   .breadcrumb span{ margin:0 8px; opacity:0.5; }
-
   .navlinks a[aria-current]{ color:var(--yellow); opacity:1; }
 
-  .blog-grid{
-    display:grid; grid-template-columns:repeat(2, 1fr); gap:18px;
-  }
-  @media (max-width:760px){ .blog-grid{ grid-template-columns:1fr; } }
+  .article-header{ padding:36px 0 20px; }
+  .article-tag{ font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--orange); margin-bottom:16px; display:inline-block; }
+  .article-header h1{ font-size:clamp(1.9rem, 3.6vw, 2.6rem); font-weight:800; color:#fff; line-height:1.2; margin-bottom:16px; max-width:900px; }
+  .article-meta{ font-family:var(--mono); font-size:0.78rem; color:var(--graphite); }
 
-  .blog-card{
-    padding:26px 26px 24px; display:flex; flex-direction:column; min-height:170px;
-    position:relative;
-  }
-  .blog-card.is-live{ transition:transform .2s ease, background .2s ease, border-color .2s ease; }
-  .blog-card.is-live:hover{ transform:translateY(-4px); background:var(--glass-strong); border-color:rgba(255,255,255,0.24); }
+  .article-body{ max-width:740px; padding-bottom:20px; }
+  .article-body p{ color:var(--paper); opacity:0.92; font-size:1.02rem; line-height:1.75; margin-bottom:22px; }
+  .article-body h2{ font-size:1.4rem; font-weight:700; color:#fff; margin:44px 0 16px; }
+  .article-body strong{ color:#fff; }
+  .article-body a{ color:var(--yellow); text-decoration:underline; text-underline-offset:3px; }
+  .article-body a:hover{ color:var(--orange); }
+  .article-body ul{ margin:0 0 22px 0; padding-left:0; list-style:none; }
+  .article-body ul li{ color:var(--paper); opacity:0.92; font-size:1.02rem; line-height:1.7; margin-bottom:14px; padding-left:26px; position:relative; }
+  .article-body ul li::before{ content:"→"; position:absolute; left:0; color:var(--yellow); }
 
-  .blog-tag{
-    font-family:var(--mono); font-size:0.68rem; letter-spacing:0.05em; text-transform:uppercase;
-    color:var(--orange); margin-bottom:14px; opacity:0.85;
-  }
-  .blog-card h3{ font-size:1.08rem; font-weight:700; margin-bottom:10px; color:#fff; line-height:1.3; }
-  .blog-card p{ color:var(--graphite); font-size:0.9rem; flex-grow:1; margin-bottom:14px; }
-
-  .blog-status{
-    font-family:var(--mono); font-size:0.72rem; font-weight:600;
-    display:inline-flex; align-items:center; gap:6px; align-self:flex-start;
-  }
-  .blog-status.pending{ color:var(--graphite); }
-  .blog-status.live{ color:var(--yellow); }
-  .blog-status svg{ width:14px; height:14px; }
-
-  .blog-empty-note{
-    font-family:var(--mono); font-size:0.8rem; color:var(--graphite);
-    text-align:center; padding:8px 0 4px;
-  }
+  .article-cta{ padding:32px 28px; margin:36px 0 8px; max-width:740px; }
+  .article-cta h3{ color:#fff; font-size:1.15rem; margin-bottom:10px; }
+  .article-cta p{ color:var(--graphite); font-size:0.95rem; margin-bottom:18px; }
 </style>
 
 </head>
@@ -324,106 +316,52 @@
       <a href="../mantenimiento-electrico-industrial.html">Mantenimiento</a>
       <a href="../plantas-de-emergencia.html">Plantas de Emergencia</a>
       <a href="../optimizacion-electrica-energias-alternativas.html">Optimización y Energías Alternativas</a>
-      <a href="index.html" aria-current="page">Blog</a>
+      <a href="index.html">Blog</a>
     </nav>
-    <a href="https://api.whatsapp.com/send/?phone=5614314006&text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20ingenier%C3%ADa%20el%C3%A9ctrica%20industrial." class="nav-cta" target="_blank" rel="noopener">Solicitar diagnóstico</a>
+    <a href="https://api.whatsapp.com/send/?phone=5614314006&text=Hola%2C%20tengo%20un%20motor%20que%20se%20sobrecalienta%20sin%20explicaci%C3%B3n%20clara." class="nav-cta" target="_blank" rel="noopener">Solicitar diagnóstico</a>
   </div>
 </header>
 
 <main>
 
   <nav class="wrap breadcrumb" aria-label="Ruta de navegación">
-    <a href="../index.html">Inicio</a><span>/</span><span style="color:var(--paper);">Blog</span>
+    <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Blog</a><span>/</span><span style="color:var(--paper);">Motor sobrecalentado sin sobrecarga</span>
   </nav>
 
-  <section class="hero" style="padding:40px 0 48px;">
-    <div class="wrap" style="max-width:760px;">
-      <p class="eyebrow">Blog técnico</p>
-      <h1 style="font-size:clamp(2rem, 3.6vw, 2.8rem); font-weight:800; color:#fff; margin-bottom:20px;">
-        Optimización y mejora continua para su planta
-      </h1>
-      <p style="font-size:1.05rem; color:var(--graphite); max-width:60ch;">
-        Contenido técnico sobre medición de calidad de energía, mantenimiento predictivo y energías alternativas, pensado para quien decide sobre la operación eléctrica de una fábrica, no para quien solo busca cambiar un foco. Cada artículo parte de lo mismo que aplicamos en cada servicio: medir antes de proponer, y sacarle más a lo que ya está instalado antes de vender algo nuevo.
-      </p>
-    </div>
+  <section class="wrap article-header">
+    <span class="article-tag">Optimización</span>
+    <h1>Por qué un motor se sobrecalienta sin estar sobrecargado (armónicos explicados)</h1>
+    <p class="article-meta">In-G9 Soluciones de Energía · Ingeniería eléctrica industrial</p>
   </section>
 
-  <section class="block" style="padding-top:0;">
-    <div class="wrap">
-      <div class="blog-grid">
+  <section class="wrap article-body">
+    <p>Un motor lleva la misma carga de siempre, nadie cambió nada en el proceso, y aun así empieza a operar más caliente de lo normal. La revisión típica confirma que la carga mecánica está dentro de rango, y ahí la mayoría se queda sin explicación. La respuesta casi nunca está en la carga, está en la corriente que alimenta al motor.</p>
 
-        <a href="factor-de-potencia-recibo-cfe.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>¿Su fábrica está pagando de más por bajo factor de potencia en el recibo de CFE?</h3>
-          <p>Cómo identificar el recargo en su propio recibo y qué lo está causando.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+    <h2>Cómo calienta un motor la distorsión armónica</h2>
+    <p>Un motor está diseñado para operar de forma eficiente con una corriente senoidal limpia a 60 Hz. Cuando la corriente llega distorsionada, con contenido de frecuencias adicionales superpuestas, el motor tiene que disipar esa energía extra en forma de calor, tanto en el devanado como en el núcleo. Ese calentamiento adicional no tiene relación con qué tan pesada sea la carga mecánica, es una consecuencia de la calidad de la energía que recibe, no de cuánto está trabajando.</p>
 
-        <a href="senales-problema-armonicos.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>5 señales de que su instalación tiene un problema de armónicos</h3>
-          <p>Motores que se calientan de más y protecciones que disparan sin razón aparente.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+    <h2>Por qué un amperímetro normal no lo detecta</h2>
+    <p>Una pinza amperométrica básica mide el valor RMS de la corriente, y ese número puede verse perfectamente dentro de rango aunque la forma de onda esté distorsionada. El amperímetro no le dice si esa corriente es una onda limpia o una llena de armónicos, solo le da un número total. Detectar el problema real requiere un instrumento capaz de mostrar el contenido armónico, no solo la magnitud de la corriente.</p>
 
-        <a href="estudio-calidad-energia-industrial.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>Qué es un estudio de calidad de energía industrial y cuándo hacerlo</h3>
-          <p>Qué mide, cuánto dura y qué debería mostrarle al final.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+    <h2>Qué buscar, además de la temperatura</h2>
+    <ul>
+      <li>Ruido o zumbido distinto al habitual en el motor o en el tablero que lo alimenta.</li>
+      <li>Vibración que no estaba presente antes, sin cambio mecánico que la explique.</li>
+      <li>Otros equipos en el mismo circuito con fallas similares o inexplicadas.</li>
+      <li>Un variador de frecuencia u otro equipo electrónico de potencia alimentando el mismo circuito, fuente común de armónicos.</li>
+    </ul>
 
-        <a href="mantenimiento-predictivo-electrico.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización · Mantenimiento</span>
-          <h3>Mantenimiento predictivo eléctrico: cómo la medición evita paros de línea</h3>
-          <p>La diferencia entre esperar la falla y anticiparla con datos.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+    <h2>Cómo se corrige</h2>
+    <p>Primero se mide la instalación para confirmar el nivel de distorsión y de dónde viene, casi siempre de un variador de frecuencia u otra carga electrónica no lineal cercana. La corrección típica es un filtro de armónicos o un reactor de línea en el equipo que genera la distorsión, no en el motor que la sufre. Instalar corrección en el lugar equivocado, o sin haber medido primero, es el mismo riesgo que ya explicamos sobre los <a href="bancos-capacitores-industriales.html">bancos de capacitores mal dimensionados</a>: se gasta en equipo que no resuelve el problema real.</p>
 
-        <a href="bancos-capacitores-industriales.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>Bancos de capacitores industriales: cómo se dimensionan y quién los necesita</h3>
-          <p>Por qué instalar uno sin medir antes puede empeorar el problema.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+    <p>Este es uno de los cinco síntomas que ya cubrimos en <a href="senales-problema-armonicos.html">las señales de un problema de armónicos</a>, aquí profundizamos en por qué pasa específicamente con motores. La única forma de confirmarlo es con <a href="../optimizacion-electrica-energias-alternativas.html">medición real de la instalación</a>, no reemplazando el motor por prueba y error.</p>
+  </section>
 
-        <a href="auditoria-electrica-industrial.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>Auditoría eléctrica industrial: qué incluye y qué debería encontrar</h3>
-          <p>El primer paso antes de invertir en cualquier equipo de corrección.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="cogeneracion-industrial-cuando-conviene.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>Cogeneración industrial: cuándo sí tiene sentido para una fábrica y cuándo no</h3>
-          <p>El perfil de consumo que hace viable un proyecto de cogeneración, y el que no.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="energia-solar-industrial-que-medir.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>Energía solar industrial: qué debe medir antes de instalar paneles en su planta</h3>
-          <p>Por qué instalar paneles sin resolver primero factor de potencia o armónicos rara vez rinde lo esperado.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="motor-se-sobrecalienta-armonicos.html" class="blog-card glass is-live">
-          <span class="blog-tag">Optimización</span>
-          <h3>Por qué un motor se sobrecalienta sin estar sobrecargado (armónicos explicados)</h3>
-          <p>Lo que no se ve a simple vista, y que solo aparece al medir.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-        <a href="costo-paro-linea-no-programado.html" class="blog-card glass is-live">
-          <span class="blog-tag">Todos los servicios</span>
-          <h3>Cuánto cuesta realmente un paro de línea no programado en una fábrica</h3>
-          <p>Más allá de la reparación: lo que un paro le cuesta en producción y en confianza del cliente.</p>
-          <span class="blog-status live">Leer artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-
-      </div>
-      <p class="blog-empty-note">Estamos publicando estos artículos de forma progresiva. Vuelva pronto o escríbanos si necesita esta información antes de que esté publicada.</p>
+  <section class="wrap">
+    <div class="article-cta glass">
+      <h3>¿Tiene un motor que se calienta sin razón aparente?</h3>
+      <p>Medimos la calidad de la energía antes de recomendar cualquier reemplazo.</p>
+      <a href="https://api.whatsapp.com/send/?phone=5614314006&text=Hola%2C%20tengo%20un%20motor%20que%20se%20sobrecalienta%20sin%20explicaci%C3%B3n%20clara." class="btn-primary" target="_blank" rel="noopener">Solicitar diagnóstico</a>
     </div>
   </section>
 
@@ -475,9 +413,5 @@
   const links = document.getElementById('navlinks');
   toggle.addEventListener('click', () => {
     const open = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open);
-  });
-</script>
-
 </body>
 </html>
