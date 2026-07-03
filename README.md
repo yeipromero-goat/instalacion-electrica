@@ -7,9 +7,9 @@
 - ✅ `mantenimiento-electrico-industrial.html` — pilar 03
 - ✅ `plantas-de-emergencia.html` — pilar 04
 - ✅ `optimizacion-electrica-energias-alternativas.html` — pilar 05
-- ✅ `blog/index.html` — hub del blog, con 9 posts planeados marcados "Próximamente" y 1 ya publicado
-- ✅ `blog/costo-paro-linea-no-programado.html` — post #10 del calendario, enlaza a los 5 pilares
-- ⬜ Los otros 9 posts del blog — pendientes de escribir, uno por uno
+- ✅ `og-image.jpg` — imagen de preview (1200x630) usada por todas las páginas al compartir el link en WhatsApp, Facebook, LinkedIn, etc.
+- ✅ `blog/index.html` — hub del blog, con los 10 posts del calendario publicados
+- ✅ Los 10 posts del blog están completos y enlazados entre sí y con los pilares
 
 Ningún link del menú da 404, las 7 páginas (home + 5 pilares + blog) existen y están en el sitemap.
 
