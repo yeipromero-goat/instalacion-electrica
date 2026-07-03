@@ -7,8 +7,9 @@
 - ✅ `mantenimiento-electrico-industrial.html` — pilar 03
 - ✅ `plantas-de-emergencia.html` — pilar 04
 - ✅ `optimizacion-electrica-energias-alternativas.html` — pilar 05
-- ✅ `blog/index.html` — hub del blog, con 10 posts planeados marcados "Próximamente" (sin link, para no generar 404)
-- ⬜ Los 10 posts del blog — pendientes de escribir, uno por uno
+- ✅ `blog/index.html` — hub del blog, con 9 posts planeados marcados "Próximamente" y 1 ya publicado
+- ✅ `blog/costo-paro-linea-no-programado.html` — post #10 del calendario, enlaza a los 5 pilares
+- ⬜ Los otros 9 posts del blog — pendientes de escribir, uno por uno
 
 Ningún link del menú da 404, las 7 páginas (home + 5 pilares + blog) existen y están en el sitemap.
 
