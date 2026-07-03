@@ -219,6 +219,7 @@
   /* ---------- hero ---------- */
   .hero{ padding:80px 0 60px; position:relative; }
   .hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:44px; align-items:center; }
+  @media (max-width:760px){ .hero-grid{ grid-template-columns:1fr; gap:32px; } }
   .eyebrow{
     font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
     color:var(--orange); display:flex; align-items:center; gap:10px; margin-bottom:18px;
@@ -531,6 +532,33 @@
           <span class="mono-tag">VERIFICACIÓN</span>
           <div><h3>Nueva medición de cierre</h3><p>Confirmamos con datos que la corrección funcionó, no solo que el equipo quedó instalado.</p></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <p class="eyebrow">Para profundizar</p>
+        <h2>Artículos relacionados</h2>
+      </div>
+      <div class="authority-grid" style="grid-template-columns:repeat(2,1fr);">
+        <a class="authority-item glass" href="blog/senales-problema-armonicos.html" style="display:block;">
+          <h3>5 señales de que su instalación tiene un problema de armónicos</h3>
+          <p>Motores que se calientan de más y protecciones que disparan sin razón aparente.</p>
+        </a>
+        <a class="authority-item glass" href="blog/estudio-calidad-energia-industrial.html" style="display:block;">
+          <h3>Qué es un estudio de calidad de energía industrial y cuándo hacerlo</h3>
+          <p>Qué mide, cuánto dura y qué debería mostrarle al final.</p>
+        </a>
+        <a class="authority-item glass" href="blog/mantenimiento-predictivo-electrico.html" style="display:block;">
+          <h3>Mantenimiento predictivo eléctrico: cómo la medición evita paros de línea</h3>
+          <p>La diferencia entre esperar la falla y anticiparla con datos.</p>
+        </a>
+        <a class="authority-item glass" href="blog/bancos-capacitores-industriales.html" style="display:block;">
+          <h3>Bancos de capacitores industriales: cómo se dimensionan y quién los necesita</h3>
+          <p>Por qué instalar uno sin medir antes puede empeorar el problema.</p>
+        </a>
       </div>
     </div>
   </section>
