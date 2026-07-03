@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mantenimiento Predictivo Eléctrico: Cómo la Medición Evita Paros de Línea | In-G9</title>
+<meta name="description" content="La diferencia entre mantenimiento preventivo y predictivo, y cómo la medición de condición anticipa fallas eléctricas antes de que paren su línea.">
+<link rel="canonical" href="https://instalacionelectrica.mx/blog/mantenimiento-predictivo-electrico.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mantenimiento Predictivo Eléctrico: Cómo la Medición Evita Paros de Línea">
+<meta property="og:description" content="La diferencia entre mantenimiento preventivo y predictivo, y cómo la medición anticipa fallas eléctricas antes de que paren su línea.">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://instalacionelectrica.mx/blog/mantenimiento-predictivo-electrico.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mantenimiento predictivo eléctrico: cómo la medición evita paros de línea",
+  "description": "La diferencia entre mantenimiento preventivo y predictivo, y cómo la medición de condición anticipa fallas eléctricas antes de que paren su línea.",
+  "author": {
+    "@type": "Organization",
+    "name": "In-G9 Soluciones de Energía"
+  },
+  "publisher": {
+    "@type": "ProfessionalService",
+    "name": "In-G9 Soluciones de Energía",
+    "url": "https://instalacionelectrica.mx/"
+  },
+  "mainEntityOfPage": "https://instalacionelectrica.mx/blog/mantenimiento-predictivo-electrico.html",
+  "url": "https://instalacionelectrica.mx/blog/mantenimiento-predictivo-electrico.html",
+  "inLanguage": "es-MX"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://instalacionelectrica.mx/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://instalacionelectrica.mx/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Mantenimiento predictivo eléctrico: cómo la medición evita paros de línea", "item": "https://instalacionelectrica.mx/blog/mantenimiento-predictivo-electrico.html"}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#101113;
+    --deck:#15171a;
+    --deck-2:#1b1e22;
+    --graphite:#9a9ea3;
+    --paper:#f5f4f0;
+    --yellow:#d9a52a;
+    --orange:#c17a4e;
+    --green:#6b8f5e;
+    --line:rgba(255,255,255,0.09);
+    --glass:rgba(255,255,255,0.055);
+    --glass-strong:rgba(255,255,255,0.09);
+    --glass-border:rgba(255,255,255,0.14);
+    --display: 'Poppins', sans-serif;
+    --body: 'Poppins', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:var(--body);
+    font-weight:400;
+    color:var(--paper);
+    background:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  a{color:inherit; text-decoration:none;}
+  img,svg{display:block; max-width:100%;}
+
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 32px; position:relative; z-index:2;}
+
+  h1,h2,h3{ font-family:var(--display); font-weight:800; letter-spacing:-0.01em; line-height:1.08; }
+
+  :focus-visible{ outline:3px solid var(--orange); outline-offset:3px; }
+
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+
+  /* ---------- ambient glow blobs (liquid glass backdrop) ---------- */
+  .glow{ position:fixed; border-radius:50%; filter:blur(140px); z-index:0; pointer-events:none; opacity:0.22; }
+  .glow-1{ width:460px; height:460px; background:var(--orange); top:-200px; left:-180px; }
+  .glow-2{ width:420px; height:420px; background:var(--green); top:320px; right:-220px; opacity:0.16; }
+  .glow-3{ width:380px; height:380px; background:var(--yellow); bottom:-200px; left:35%; opacity:0.14; }
+
+  .grid-overlay{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
+    background-size:42px 42px;
+    mask-image:linear-gradient(to bottom, black, transparent 75%);
+  }
+
+  /* ---------- glass base ---------- */
+  .glass{
+    background:var(--glass);
+    backdrop-filter:blur(20px) saturate(140%);
+    -webkit-backdrop-filter:blur(20px) saturate(140%);
+    border:1px solid var(--glass-border);
+    border-radius:20px;
+  }
+
+  /* ---------- header ---------- */
+  header{ position:sticky; top:16px; z-index:50; padding:0 16px; }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 22px; gap:24px; max-width:1180px; margin:0 auto;
+    border-radius:100px;
+  }
+  .brand{ font-family:var(--display); font-weight:800; font-size:1.05rem; display:flex; align-items:baseline; gap:8px; white-space:nowrap; }
+  .brand small{ font-family:var(--mono); font-weight:500; font-size:0.6rem; color:var(--graphite); letter-spacing:0.06em; text-transform:uppercase; }
+  .navlinks{ display:flex; gap:26px; flex-wrap:wrap; font-size:0.85rem; font-weight:500; }
+  .navlinks a{ position:relative; padding:4px 0; opacity:0.85; }
+  .navlinks a:hover{ opacity:1; color:var(--yellow); }
+  .nav-cta{
+    background:var(--yellow); color:var(--ink); padding:10px 20px; border-radius:100px;
+    font-weight:700; font-size:0.82rem; white-space:nowrap;
+    box-shadow:0 6px 20px rgba(242,183,5,0.25);
+  }
+  .nav-toggle{ display:none; }
+
+  @media (max-width: 880px){
+    .navlinks{
+      display:none; position:absolute; top:calc(100% + 10px); left:16px; right:16px;
+      background:var(--deck-2); border:1px solid var(--glass-border); border-radius:16px;
+      flex-direction:column; gap:0; padding:8px 20px 14px;
+    }
+    .navlinks.open{ display:flex; }
+    .navlinks a{ padding:12px 0; border-bottom:1px solid var(--line); }
+    .nav-toggle{ display:block; background:var(--glass); border:1px solid var(--glass-border); color:var(--paper); padding:9px 14px; font-family:var(--mono); font-size:0.75rem; border-radius:100px; }
+  }
+
+  /* ---------- hero ---------- */
+  .hero{ padding:80px 0 60px; position:relative; }
+  .hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:44px; align-items:center; }
+  .eyebrow{
+    font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--orange); display:flex; align-items:center; gap:10px; margin-bottom:18px;
+    opacity:0.9;
+  }
+  .eyebrow::before{ content:""; width:22px; height:2px; background:var(--orange); opacity:0.7; }
+  .hero h1{ font-size:clamp(2.2rem, 4vw, 3.4rem); font-weight:800; margin-bottom:20px; color:#fff; }
+  .hero h1 span{ display:block; font-size:0.48em; font-weight:500; color:var(--graphite); margin-top:12px; }
+  .hero p{ font-size:1.05rem; color:var(--graphite); max-width:46ch; margin-bottom:30px; }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn-primary{
+    background:var(--yellow); color:var(--ink); padding:15px 26px; font-weight:700; font-size:0.92rem;
+    border-radius:100px; box-shadow:0 10px 30px rgba(242,183,5,0.3);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 14px 34px rgba(242,183,5,0.4); }
+  .btn-ghost{
+    padding:14px 24px; font-weight:600; font-size:0.92rem; border-radius:100px; color:var(--paper);
+  }
+  .btn-ghost:hover{ background:var(--glass-strong); }
+
+  /* waveform glass panel */
+  .scope{ padding:26px 24px 22px; }
+  .scope-label{ display:flex; justify-content:space-between; align-items:center; font-family:var(--mono); color:var(--graphite); font-size:0.7rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:16px; }
+  .scope-dot{ width:7px; height:7px; border-radius:50%; background:var(--green); display:inline-block; box-shadow:0 0 0 4px rgba(111,174,85,0.2); animation:pulse 2s ease-in-out infinite; margin-right:6px;}
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+  .scope svg{ width:100%; height:auto; }
+  .scope-readout{ display:flex; justify-content:space-between; font-family:var(--mono); font-size:0.75rem; color:var(--paper); margin-top:16px; padding-top:16px; border-top:1px solid var(--line); }
+  .scope-readout .bad{ color:var(--orange); }
+  .scope-readout .good{ color:var(--green); }
+
+  /* ---------- trust bar ---------- */
+  .trust{ padding:22px 26px; margin:0 auto 0; max-width:1180px; }
+  .trust-wrap{ padding:0 16px; }
+  .trust-row{ display:flex; flex-wrap:wrap; gap:12px 36px; justify-content:space-between; font-family:var(--mono); font-size:0.78rem; color:var(--graphite); }
+  .trust-row strong{ color:#fff; font-weight:600; }
+
+  /* ---------- section shells ---------- */
+  section.block{ padding:76px 0; position:relative; }
+  .block-head{ max-width:640px; margin-bottom:44px; }
+  .block-head .eyebrow{ color:var(--graphite); } .block-head .eyebrow::before{ background:var(--graphite); }
+  .block-head h2{ font-size:clamp(1.6rem, 3vw, 2.2rem); margin-bottom:14px; color:#fff; }
+  .block-head p{ color:var(--graphite); font-size:1rem; }
+
+  /* ---------- pillars (glass cards) ---------- */
+  .pillars{ display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; }
+  @media (max-width:900px){ .pillars{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:600px){ .pillars{ grid-template-columns:1fr; } }
+
+  .pillar{
+    padding:30px 26px; min-height:220px;
+    position:relative; overflow:hidden;
+    transition:transform .2s ease, background .2s ease, border-color .2s ease;
+  }
+  .pillar:hover{ transform:translateY(-4px); background:var(--glass-strong); border-color:rgba(255,255,255,0.24); }
+  .pillar-body{ position:relative; z-index:1; display:flex; flex-direction:column; height:100%; }
+  .pillar-icon{
+    position:absolute; bottom:14px; right:14px; z-index:0;
+    width:76px; height:76px;
+    color:var(--graphite); opacity:0.45;
+    pointer-events:none;
+    transition:color .25s ease, opacity .25s ease, transform .25s ease;
+  }
+  .pillar-icon svg{ width:100%; height:100%; }
+  .pillar:hover .pillar-icon{ color:var(--yellow); opacity:0.85; transform:scale(1.05); }
+  .pillar-num{ font-family:var(--mono); font-size:0.7rem; color:var(--graphite); margin-bottom:18px; letter-spacing:0.05em; }
+  .pillar h3{ font-size:1.15rem; font-weight:700; margin-bottom:10px; color:#fff; max-width:75%; }
+  .pillar p{ color:var(--graphite); font-size:0.9rem; margin-bottom:18px; flex-grow:1; max-width:88%; }
+  .pillar-link{ font-family:var(--mono); font-size:0.76rem; font-weight:600; display:inline-flex; align-items:center; gap:6px; color:var(--yellow); }
+  .pillar-link svg{ width:14px; height:14px; transition:transform .15s ease; }
+  .pillar:hover .pillar-link svg{ transform:translateX(3px); }
+
+  /* ---------- authority strip ---------- */
+  .authority-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  @media (max-width:800px){ .authority-grid{ grid-template-columns:1fr; } }
+  .authority-item{ padding:24px 22px; }
+  .authority-item h3{ font-size:1.02rem; margin-bottom:8px; color:#fff; font-weight:700; }
+  .authority-item p{ color:var(--graphite); font-size:0.88rem; }
+  .authority .eyebrow{ color:var(--graphite); } .authority .eyebrow::before{ background:var(--graphite); }
+
+  /* ---------- process ---------- */
+  .process-list{ display:flex; flex-direction:column; gap:14px; }
+  .process-item{ display:grid; grid-template-columns:110px 1fr; gap:22px; padding:24px 26px; align-items:start; }
+  .process-item .mono-tag{ font-family:var(--mono); font-size:0.72rem; color:var(--graphite); padding-top:3px; letter-spacing:0.04em; }
+  .process-item h3{ font-size:1.05rem; margin-bottom:6px; color:#fff; font-weight:700; }
+  .process-item p{ color:var(--graphite); font-size:0.9rem; max-width:60ch; }
+
+  /* ---------- footer ---------- */
+  /* ---------- faq ---------- */
+  .faq-list{ display:flex; flex-direction:column; gap:12px; }
+  .faq-item{ padding:0; overflow:hidden; }
+  .faq-item summary{
+    list-style:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    padding:22px 26px; font-family:var(--display); font-weight:600; font-size:1rem; color:#fff;
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item .faq-plus{
+    flex:none; width:22px; height:22px; position:relative;
+  }
+  .faq-item .faq-plus::before,
+  .faq-item .faq-plus::after{
+    content:""; position:absolute; background:var(--yellow); border-radius:2px;
+    top:50%; left:50%; transform:translate(-50%,-50%);
+  }
+  .faq-item .faq-plus::before{ width:14px; height:2px; }
+  .faq-item .faq-plus::after{ width:2px; height:14px; transition:transform .2s ease; }
+  .faq-item[open] .faq-plus::after{ transform:translate(-50%,-50%) rotate(90deg) scaleY(0); }
+  .faq-item .faq-answer{ padding:0 26px 24px; color:var(--graphite); font-size:0.92rem; max-width:68ch; }
+  .faq-item[open] summary{ border-bottom:1px solid var(--line); }
+
+  footer{ padding:70px 0 30px; margin-top:20px; }
+  .footer-panel{ padding:48px 40px; }
+  .footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+  @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr; } .footer-panel{ padding:32px 24px; } }
+  .footer-grid h4{ font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--graphite); margin-bottom:16px; }
+  .footer-grid ul{ list-style:none; }
+  .footer-grid li{ margin-bottom:10px; font-size:0.9rem; color:var(--paper); }
+  .footer-grid a:hover{ color:var(--yellow); }
+  .footer-bottom{ border-top:1px solid var(--line); padding-top:22px; margin-top:8px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.78rem; color:var(--graphite); font-family:var(--mono); }
+</style>
+<style>
+  .breadcrumb{ padding:20px 0 0; font-family:var(--mono); font-size:0.76rem; color:var(--graphite); }
+  .breadcrumb a{ color:var(--graphite); } .breadcrumb a:hover{ color:var(--yellow); }
+  .breadcrumb span{ margin:0 8px; opacity:0.5; }
+  .navlinks a[aria-current]{ color:var(--yellow); opacity:1; }
+
+  .article-header{ padding:36px 0 20px; }
+  .article-tag{ font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--orange); margin-bottom:16px; display:inline-block; }
+  .article-header h1{ font-size:clamp(1.9rem, 3.6vw, 2.6rem); font-weight:800; color:#fff; line-height:1.2; margin-bottom:16px; max-width:900px; }
+  .article-meta{ font-family:var(--mono); font-size:0.78rem; color:var(--graphite); }
+
+  .article-body{ max-width:740px; padding-bottom:20px; }
+  .article-body p{ color:var(--paper); opacity:0.92; font-size:1.02rem; line-height:1.75; margin-bottom:22px; }
+  .article-body h2{ font-size:1.4rem; font-weight:700; color:#fff; margin:44px 0 16px; }
+  .article-body strong{ color:#fff; }
+  .article-body a{ color:var(--yellow); text-decoration:underline; text-underline-offset:3px; }
+  .article-body a:hover{ color:var(--orange); }
+  .article-body ul{ margin:0 0 22px 0; padding-left:0; list-style:none; }
+  .article-body ul li{ color:var(--paper); opacity:0.92; font-size:1.02rem; line-height:1.7; margin-bottom:14px; padding-left:26px; position:relative; }
+  .article-body ul li::before{ content:"→"; position:absolute; left:0; color:var(--yellow); }
+
+  .article-cta{ padding:32px 28px; margin:36px 0 8px; max-width:740px; }
+  .article-cta h3{ color:#fff; font-size:1.15rem; margin-bottom:10px; }
+  .article-cta p{ color:var(--graphite); font-size:0.95rem; margin-bottom:18px; }
+</style>
+
+</head>
+<body>
+
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+<div class="glow glow-3"></div>
+<div class="grid-overlay"></div>
+
+<header>
+  <div class="nav glass">
+    <a href="../index.html" class="brand">IN-G9 <small>Soluciones de Energía</small></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navlinks">MENÚ</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="../instalacion-electrica-industrial.html">Instalación Eléctrica</a>
+      <a href="../subestaciones-electricas.html">Subestaciones</a>
+      <a href="../mantenimiento-electrico-industrial.html">Mantenimiento</a>
+      <a href="../plantas-de-emergencia.html">Plantas de Emergencia</a>
+      <a href="../optimizacion-electrica-energias-alternativas.html">Optimización y Energías Alternativas</a>
+      <a href="index.html">Blog</a>
+    </nav>
+    <a href="https://api.whatsapp.com/send/?phone=5614314006&text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mantenimiento%20predictivo%20el%C3%A9ctrico." class="nav-cta" target="_blank" rel="noopener">Solicitar diagnóstico</a>
+  </div>
+</header>
+
+<main>
+
+  <nav class="wrap breadcrumb" aria-label="Ruta de navegación">
+    <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Blog</a><span>/</span><span style="color:var(--paper);">Mantenimiento predictivo eléctrico</span>
+  </nav>
+
+  <section class="wrap article-header">
+    <span class="article-tag">Optimización · Mantenimiento</span>
+    <h1>Mantenimiento predictivo eléctrico: cómo la medición evita paros de línea</h1>
+    <p class="article-meta">In-G9 Soluciones de Energía · Ingeniería eléctrica industrial</p>
+  </section>
+
+  <section class="wrap article-body">
+    <p>Hay una diferencia real entre revisar un equipo porque ya tocaba en el calendario, y revisarlo porque una medición mostró que se estaba acercando a fallar. La primera es mantenimiento preventivo. La segunda es predictivo, y es la que realmente evita paros que el calendario no alcanza a anticipar.</p>
+
+    <h2>Qué es el mantenimiento predictivo</h2>
+    <p>En vez de seguir un intervalo fijo (cada 6 meses, cada año), el mantenimiento predictivo se basa en el estado real del equipo, medido con instrumentos: temperatura, vibración, calidad de la energía que recibe, condición real de una batería. Cuando la medición muestra que un parámetro se está saliendo de su rango normal, ahí se interviene, sin esperar la fecha del calendario ni la falla misma.</p>
+
+    <h2>Cómo se aplica a lo eléctrico</h2>
+    <p>En la práctica, combina varias mediciones con equipo Fluke: termografía para detectar puntos calientes en conexiones y tableros antes de que se conviertan en una falla, análisis de calidad de energía para ver si armónicos o factor de potencia están degradando el equipo con el tiempo, y prueba de carga real en baterías de UPS y plantas de emergencia para saber cuánta autonomía real les queda, no la que tenían de fábrica.</p>
+
+    <h2>La diferencia con el preventivo tradicional</h2>
+    <p>El preventivo revisa aunque el equipo esté perfecto, porque "ya tocaba". Eso no está mal, pero tiene un límite: no distingue entre un equipo que está sano y uno que está a semanas de fallar, si ambos caen en la misma fecha de revisión. El predictivo sí hace esa distinción, porque mide la condición real en vez de seguir solo el calendario. Lo ideal no es elegir uno u otro, es usar el predictivo para decidir cuándo el preventivo realmente hace falta.</p>
+
+    <h2>Un ejemplo de cómo previene un paro</h2>
+    <p>Una batería de UPS no falla de golpe, se degrada progresivamente durante meses. Una prueba de carga periódica detecta esa degradación mucho antes de que la batería deje de sostener el respaldo el día que se va la luz. Sin esa medición, la primera señal de que la batería estaba mal suele ser, precisamente, el día que falla en el momento en que más se necesitaba.</p>
+
+    <p>El mantenimiento predictivo no reemplaza al <a href="../mantenimiento-electrico-industrial.html">mantenimiento programado de tableros y UPS</a>, lo hace más preciso. Y depende directamente de la misma <a href="../optimizacion-electrica-energias-alternativas.html">medición de calidad de energía</a> que aplicamos en otros servicios.</p>
+  </section>
+
+  <section class="wrap">
+    <div class="article-cta glass">
+      <h3>¿Quiere anticipar fallas en vez de reaccionar a ellas?</h3>
+      <p>Empezamos midiendo la condición real de sus equipos críticos.</p>
+      <a href="https://api.whatsapp.com/send/?phone=5614314006&text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mantenimiento%20predictivo%20el%C3%A9ctrico." class="btn-primary" target="_blank" rel="noopener">Solicitar diagnóstico predictivo</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="footer-panel glass">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:14px;">IN-G9 <small>Soluciones de Energía</small></div>
+          <p style="color:var(--graphite); font-size:0.9rem; max-width:38ch;">Ingeniería eléctrica industrial en baja y media tensión, con más de 20 años de experiencia y medición de precisión Fluke.</p>
+        </div>
+        <div>
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="../instalacion-electrica-industrial.html">Instalación Eléctrica Industrial</a></li>
+            <li><a href="../subestaciones-electricas.html">Subestaciones Eléctricas</a></li>
+            <li><a href="../mantenimiento-electrico-industrial.html">Mantenimiento Eléctrico Industrial</a></li>
+            <li><a href="../plantas-de-emergencia.html">Plantas de Emergencia</a></li>
+            <li><a href="../optimizacion-electrica-energias-alternativas.html">Optimización y Energías Alternativas</a></li>
+            <li><a href="index.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto y cobertura</h4>
+          <ul>
+            <li><a href="https://api.whatsapp.com/send/?phone=5614314006&text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20ingenier%C3%ADa%20el%C3%A9ctrica%20industrial." target="_blank" rel="noopener">WhatsApp: 561 431 4006</a></li>
+            <li>Ciudad de México</li>
+            <li>Toluca</li>
+            <li>Naucalpan</li>
+            <li>Santa Fe</li>
+            <li>Huixquilucan</li>
+            <li>Atizapán</li>
+            <li>Tlalnepantla</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 In-G9 Soluciones de Energía</span>
+        <span>Baja y media tensión · Ingeniería eléctrica industrial</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+</body>
+</html>
