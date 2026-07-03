@@ -40,4 +40,24 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://instalacionelectrica.mx/blog/senales-problema-armonicos.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://instalacionelectrica.mx/blog/estudio-calidad-energia-industrial.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://instalacionelectrica.mx/blog/mantenimiento-predictivo-electrico.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://instalacionelectrica.mx/blog/bancos-capacitores-industriales.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
